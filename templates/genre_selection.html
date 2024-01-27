@@ -1,0 +1,211 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Genre Selection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d7f5f5; /* Pale teal color */
+        }
+        .card {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the cards */
+            margin-bottom: 20px; /* Add space between cards */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-img-top {
+            height: 200px; /* Define the desired height */
+            object-fit: cover; /* Ensures the image covers the entire area */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-5 mb-4">Granny Says,Select Genre!</h2>
+        <div class="row align-items-stretch">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2018/10/118.jpg" class="card-img-top" alt="Scary">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-0">Scary</h5>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="/scary" class="btn btn-primary d-block mx-auto mt-3">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://th.bing.com/th/id/OIG.7mgvP3QzJLGcW14CQa91?pid=ImgGn" class="card-img-top" alt="Humor">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-0">Humor</h5>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="/humor" class="btn btn-primary d-block mx-auto mt-3">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_1280.jpg" class="card-img-top" alt="Romance">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-0">Romance</h5>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="/romance" class="btn btn-primary d-block mx-auto mt-3">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granny Says, Select a Genre!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #cfe8e8; /* Pale teal background */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1); /* Added box shadow */
+            transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+        }
+        .card:hover {
+            box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+        }
+        .card img {
+            width: auto;
+            height: 100%;
+            transition: filter 0.5s ease;
+        }
+
+        .card:hover img {
+            filter: blur(5px); /* Blur the image on hover */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card:hover .overlay {
+            opacity: 1; /* Show the overlay on hover */
+        }
+        .overlay a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: normal; /* Normal weight for initial state */
+            transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transitions */
+        }
+
+        .overlay a:hover {
+            color: white; /* Change text color to white on hover */
+            font-weight: bold; /* Bold weight on hover */
+            text-decoration: none; /* Remove underline on hover */
+        }
+        .granny-gif,
+        .cat-gif {
+            position: absolute;
+            bottom: 30px;
+            width: 100px; /* Adjust width as needed */
+            height: auto;
+        }
+
+        .granny-gif {
+            right: 80px;
+            height: 150px;
+        }
+
+        .cat-gif {
+            right: 20px; /* Adjust the horizontal spacing between granny and cat gifs */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Granny Says, Select a Genre!</h1>
+        <div class="cards">
+            <div class="card">               
+                <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2018/10/118.jpg" alt="Scary">
+                <div class="overlay"><a href="/scary">Scary</a></div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIG.7mgvP3QzJLGcW14CQa91?pid=ImgGn" alt="Funny">
+                <div class="overlay"><a href="/humor">Funny</a></div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_1280.jpg" alt="Romance">
+                <div class="overlay"><a href="/romance">Romance</a></div>
+            </div>
+        </div>
+        <img src="https://www.icegif.com/wp-content/uploads/2023/11/icegif-197.gif" alt="Cat GIF" class="cat-gif">
+        <img src="https://media.giphy.com/media/8Qufm5yL7q7Sg/source.gif" alt="Granny GIF" class="granny-gif">
+    </div>
+</body>
+
+</html>
