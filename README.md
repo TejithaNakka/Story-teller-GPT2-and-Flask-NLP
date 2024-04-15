@@ -1,6 +1,6 @@
 Automated Real-time Story Generation with GPT-2 and Flask
 	
-	This project centers on an innovative approach to real-time story generation, harnessing the capabilities of Flask, GPT-2 (Generative Pre-trained Transformer 2), and web technologies.
+This project centers on an innovative approach to real-time story generation, harnessing the capabilities of Flask, GPT-2 (Generative Pre-trained Transformer 2), and web technologies.
  Its primary objective is to create an intuitive platform where users can input prompts, triggering GPT-2 to generate unique, contextually relevant stories instantly. The seamless integration of Flask serves as the project's backbone, facilitating interactions between the user interface and the GPT-2 models. The core objective lies in demonstrating the fusion of AI-driven content creation and web development. 
  The user-friendly interface, developed using HTML, CSS, and JavaScript, empowers users to input prompts and receive generated stories dynamically. By showcasing the potential of AI in creative content generation, this project illustrates the seamless integration of Flask with GPT-2, enabling real-time story creation for a diverse range of prompts. The ultimate  goal is to offer an interactive and engaging storytelling experience that highlights the synergy between AI capabilities and user interaction within a web-based framework.
 Key Words: Fine-Tuning,GPT-2 Model, Generative AI, Natural Language Processing.
